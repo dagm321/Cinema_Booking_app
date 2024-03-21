@@ -1,0 +1,57 @@
+.ticking{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.ticket{
+    width: 300px;
+    height: 500px;
+}
+.tick {
+    width: 300px;
+    height: 420px;
+    background-color: #030613;
+}
+.ticket_information {
+    margin-top: -20;
+    display: flex;
+    justify-content: space-around;
+}
+.ticket_information p{
+    font-size: 13px;
+}
+.left {
+    line-height: 30px;
+}
+.right {
+    line-height: 30px;
+}
+.tick h1 {
+    text-align: center;
+}
+.buttons {
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttons a {
+    text-decoration: none;
+    background-color: #1B203A;
+    padding: 10px 30px;
+    color: white;
+    font-size: 14px;
+}
+.buttons a:hover {
+    background-color: #565b70;
+    transition: 0.5s ease;
+}
+.buttons #cancel {
+    background-color: #982020;
+}
+.buttons #cancel:hover {
+    background-color: rgb(210, 25, 25);
+    transition: 0.5s ease;
+}

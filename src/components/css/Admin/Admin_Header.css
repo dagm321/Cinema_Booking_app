@@ -1,0 +1,43 @@
+.h {
+    margin: 0;
+    padding: 0;
+    background-color: #02020A;
+    color: white;
+    font-family: sans-serif;
+}
+.he {
+    display: flex;
+    justify-content: space-around;
+}
+.col-11 {
+    margin-top: 10px;
+}
+.col-11 .line {
+    border: 1px solid #7C7272;
+    width: 150px;
+}
+.col-11 h1 {
+    color: #7C7272;
+}
+.col-11 a {
+    text-decoration: none;
+}
+
+.col-33 {
+    width: 300px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.col-33 a {
+    text-decoration: none;
+    color: white;
+}
+.col-33 a:hover {
+    color: #7C7272;
+    transition: 0.5s ease;
+}
+
+.col-22 {
+    margin-top: 30px;
+}

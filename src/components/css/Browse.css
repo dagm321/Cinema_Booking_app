@@ -1,0 +1,59 @@
+
+.cards {
+    width: 300px;
+    height: 370px;
+    margin-top: 100px;
+}
+.cards img {
+    width: 230px;
+    height: 370px;
+}
+.body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 370px;
+}
+.genre {
+    font-size: 12px;
+    margin-top: 15px;
+    color: #7C7272;
+}
+.movie_name {
+    font-size: 18px;
+}
+.cards p {
+    color: white;
+    margin-top: 20;
+    line-height: 0;
+    font-size: 13;
+}
+.cards:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: 0.5s ease;
+    opacity: 1;
+}
+.cards .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+    background-color: #fff;
+    color: #02020A;
+    padding: 12px 20px;
+    transform: translate(-95%, -50%);
+    opacity: 0;
+}
+.cards .button:hover {
+    background-color: #1B203A;
+    color: #fff;
+    transition: 0.6s ease;
+}
+
+.cards:hover .button  {
+    opacity: 1;
+}
+.cards:hover .overlay {
+    opacity: 1;
+}

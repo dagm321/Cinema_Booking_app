@@ -1,0 +1,56 @@
+.header {
+    margin: 0;
+    padding: 0;
+    background-color: #02020A;
+    color: white;
+    font-family: sans-serif;
+}
+.head {
+    display: flex;
+    justify-content: space-around;
+}
+.col-1 {
+    margin-top: 10px;
+}
+.col-1 .line {
+    border: 1px solid #7C7272;
+    width: 150px;
+}
+.col-1 h1 {
+    color: #7C7272;
+}
+.col-1 a {
+    text-decoration: none;
+}
+.head .col-2 input {
+    margin-top: 40px;
+    background-color: #1B203A;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 200px;
+}
+.head .col-2 input:focus {
+    text-indent: 20px;
+    color: #b3acac;
+}
+.head .col-2 input::placeholder {
+    text-indent: 20px;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.col-3 {
+    width: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.col-3 a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 15px;
+}
+.col-3 a:hover {
+    color: #8d8e96;
+    transition: 0.2s ease;
+}

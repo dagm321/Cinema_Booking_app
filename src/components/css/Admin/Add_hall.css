@@ -1,0 +1,38 @@
+.bdd {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.inps form {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.inps input {
+    background-color: #1B203A;
+    height: 28px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.inps input::placeholder {
+    text-indent: 30px;
+}
+.inps input:focus {
+    outline: none;
+    text-indent: 30px;
+    color: white;
+}
+.inps form button {
+    background-color: #942323;
+    height: 28px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.inps form button:hover {
+    background-color: #d42222;
+    transition: 0.6s ease;
+}
