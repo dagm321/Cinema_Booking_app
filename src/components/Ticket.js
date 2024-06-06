@@ -1,10 +1,33 @@
-import React from 'react';
+
 import './css/Ticket.css';
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 function Ticket() { 
+    const [movieData, setMovieData] = useState(null);
+    const { id } = useParams(); 
+
+    useEffect(() => {
+        fetchData();
+    }, [id]); 
+
+    const fetchData = async () => {
+        try {
+            const response = await fetch(`http://localhost:3000/movies/${id}`); 
+            if (!response.ok) {
+                throw new Error('Failed to fetch movie details');
+            }
+            const data = await response.json();
+            setMovieData(data["data"]);
+        } catch (error) {
+            console.error('Error fetching movie details:', error);
+        }
+    };
     return (
         <>  
             <div class="ticking">
+            {movieData ? (
+                    <>
                 <div class="ticket">
                     <div class="tick">
                         <h1>Movie Ticket</h1>
@@ -20,8 +43,8 @@ function Ticket() {
                                 <p>Date</p>
                             </div>
                             <div class="right">
-                                <p>The Beekeeper</p>
-                                <p>March 24, 2024</p>
+                                <p>{movieData.name}</p>
+                                <p>{movieData.description}</p>
                                 <p>6 PM</p>
                                 <p>24</p>
                                 <p>200 ETB</p>
@@ -36,6 +59,11 @@ function Ticket() {
                         <a href="/Seats" id="cancel">x Cancel</a>
                     </div>
                 </div>
+                    </>
+                ) : (
+                    <p>Loading...</p>
+                )}
+
             </div>
         </>
     );

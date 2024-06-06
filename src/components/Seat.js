@@ -30,7 +30,7 @@ function Seat() {
         <div class="main_bodi">
             <div class="item--1">
                 <img src={schedules.poster} alt="Moive Image"></img>
-                <a href="/Tickets">Book now</a>
+                <a href={`/Tickets/${schedules.id}`}>Book now</a>
             </div>
             <div class="item--2">
                 <div class="p">
